@@ -1,5 +1,7 @@
 # Typeworld
 
+![Typeworld interactive mechanical typewriter](assets/screenshots/typeworld-hero-desktop-v1.png)
+
 Typeworld is an interactive 3D word archive built around a fictional mechanical
 typewriter. Visitors can type on the machine, discover English trigger words,
 watch the paper and room respond, archive printed pages in desk drawers, and
@@ -22,6 +24,21 @@ Live site: [the0612.com](https://the0612.com)
   design.
 - Safari-specific five-line paper behavior and automated regression coverage.
 - Full editable Blender source files and reproducible Blender Python scripts.
+
+## Experience
+
+### Words change the room
+
+Type an English keyword and the paper, machine, or surrounding room responds.
+
+![FLOWER keyword growing around the Typeworld typewriter](assets/screenshots/typeworld-flower-desktop-v1.png)
+
+### The library
+
+Four bilingual volumes explain the interaction system and organize present and
+future word effects by category.
+
+![Typeworld four-volume library](assets/screenshots/typeworld-library-desktop-v1.png)
 
 ## Quick start
 
@@ -63,6 +80,7 @@ assets/models/       Editable .blend sources and browser GLB outputs
 assets/models/vendor Third-party models with their original licenses
 assets/textures/     Runtime textures and generated visual assets
 assets/audio/        Mechanical sounds, paper sound, and room music
+assets/screenshots/  Real browser captures used by this README
 specs/               Keyboard and vendor-model contracts
 docs/                Asset provenance and technical notes
 ```

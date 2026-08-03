@@ -14,6 +14,7 @@ This includes:
 - `assets/models/typewriter-*.blend`
 - `assets/models/typewriter-*.glb`
 - original Typeworld brand artwork in `assets/brand/`
+- real Typeworld browser captures in `assets/screenshots/`
 - original generated environment textures in `assets/textures/environment/`
 - original generated typewriter materials in `assets/textures/generated/`
 - original book-cover and room-paper artwork in `assets/textures/projects/`

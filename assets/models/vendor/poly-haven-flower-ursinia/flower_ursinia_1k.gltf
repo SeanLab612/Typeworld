@@ -1,0 +1,489 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.2.60",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "flower_ursinia_a_LOD0",
+      "translation": [
+        -1.0143800973892212,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "flower_ursinia_b_LOD0",
+      "translation": [
+        -0.4508897066116333,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 2,
+      "name": "flower_ursinia_c_LOD0"
+    },
+    {
+      "mesh": 3,
+      "name": "flower_ursinia_d_LOD0",
+      "translation": [
+        0.4506944417953491,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 4,
+      "name": "flower_ursinia_e_LOD0",
+      "translation": [
+        0.8295160531997681,
+        0,
+        0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "flower_ursinia",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane.102",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.130",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.175",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.085",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "flower_ursinia_nor_gl",
+      "uri": "textures/flower_ursinia_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "flower_ursinia_diff-flower_ursinia_alpha",
+      "uri": "textures/flower_ursinia_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "flower_ursinia_rough",
+      "uri": "textures/flower_ursinia_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8383,
+      "max": [
+        0.13818439841270447,
+        0.16234752535820007,
+        0.20272420346736908
+      ],
+      "min": [
+        -0.28719592094421387,
+        -0.0018359733512625098,
+        -0.14058710634708405
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8383,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8383,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 31905,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 4526,
+      "max": [
+        0.066542848944664,
+        0.12902304530143738,
+        0.1626039743423462
+      ],
+      "min": [
+        -0.2107023149728775,
+        -0.0022444198839366436,
+        -0.09721554815769196
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 4526,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 4526,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 17424,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 3408,
+      "max": [
+        0.1021178737282753,
+        0.1478162407875061,
+        0.07637084275484085
+      ],
+      "min": [
+        -0.15887750685214996,
+        -0.0017700401367619634,
+        -0.12222061306238174
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 3408,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 3408,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 12777,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 1653,
+      "max": [
+        0.09596877545118332,
+        0.1319209188222885,
+        0.05233445391058922
+      ],
+      "min": [
+        -0.09027450531721115,
+        -0.0011540421983227134,
+        -0.09838233888149261
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 1653,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 1653,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5123,
+      "count": 6801,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 1375,
+      "max": [
+        0.06266241520643234,
+        0.06487225741147995,
+        0.08825350552797318
+      ],
+      "min": [
+        -0.07526371628046036,
+        -0.00945647619664669,
+        -0.06905131787061691
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 1375,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 1375,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5123,
+      "count": 5892,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 100596,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 100596,
+      "byteOffset": 100596,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 67064,
+      "byteOffset": 201192,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 63810,
+      "byteOffset": 268256,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54312,
+      "byteOffset": 332068,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54312,
+      "byteOffset": 386380,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 36208,
+      "byteOffset": 440692,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 34848,
+      "byteOffset": 476900,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 40896,
+      "byteOffset": 511748,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 40896,
+      "byteOffset": 552644,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 27264,
+      "byteOffset": 593540,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 25554,
+      "byteOffset": 620804,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19836,
+      "byteOffset": 646360,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19836,
+      "byteOffset": 666196,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 13224,
+      "byteOffset": 686032,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 13602,
+      "byteOffset": 699256,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16500,
+      "byteOffset": 712860,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16500,
+      "byteOffset": 729360,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11000,
+      "byteOffset": 745860,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11784,
+      "byteOffset": 756860,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 768644,
+      "uri": "flower_ursinia.bin"
+    }
+  ]
+}

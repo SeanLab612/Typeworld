@@ -1,0 +1,192 @@
+:root {
+  color: #eadabd;
+  background: #10090a;
+  font-family: "Iowan Old Style", Baskerville, Georgia, serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#book-sample {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+.book-study {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #10090a;
+}
+
+.book-study canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.book-study__brand,
+.book-study__gate,
+.book-study__caption,
+.book-study__views {
+  position: absolute;
+  z-index: 2;
+}
+
+.book-study__brand {
+  top: 36px;
+  left: 42px;
+  margin: 0;
+  color: #cfa96e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+.book-study__gate {
+  top: 35px;
+  right: 42px;
+  margin: 0;
+  color: rgb(228 208 177 / 58%);
+  font: 600 9px/1.5 "Courier New", monospace;
+  letter-spacing: 0.18em;
+  text-align: right;
+}
+
+.book-study__caption {
+  bottom: 38px;
+  left: 42px;
+  max-width: 350px;
+}
+
+.book-study__caption p,
+.book-study__caption h1 {
+  margin: 0;
+}
+
+.book-study__caption p {
+  color: #b18351;
+  font: 700 9px/1.5 "Courier New", monospace;
+  letter-spacing: 0.2em;
+}
+
+.book-study__caption h1 {
+  margin-top: 9px;
+  color: #f0dfc3;
+  font-size: clamp(25px, 3vw, 42px);
+  font-weight: 400;
+  letter-spacing: 0.035em;
+}
+
+.book-study__caption span {
+  display: block;
+  margin-top: 8px;
+  color: rgb(226 207 176 / 56%);
+  font: 500 10px/1.7 "Courier New", monospace;
+  letter-spacing: 0.07em;
+}
+
+.book-study__views {
+  right: 42px;
+  bottom: 38px;
+  display: flex;
+  gap: 22px;
+}
+
+.book-study__views button {
+  position: relative;
+  padding: 7px 0 10px;
+  border: 0;
+  color: rgb(230 211 180 / 52%);
+  background: transparent;
+  cursor: pointer;
+  font: 600 9px/1 "Courier New", monospace;
+  letter-spacing: 0.14em;
+}
+
+.book-study__views button::after {
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  left: 40%;
+  height: 1px;
+  background: #cda267;
+  content: "";
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.book-study__views button:hover,
+.book-study__views button:focus-visible,
+.book-study__views button[aria-pressed="true"] {
+  color: #f0dfc3;
+}
+
+.book-study__views button[aria-pressed="true"]::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.book-study__views button:focus-visible {
+  outline: 1px solid rgb(218 174 112 / 65%);
+  outline-offset: 5px;
+}
+
+.book-study__loading {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #d4ad75;
+  background: #10090a;
+  font: 600 10px/1 "Courier New", monospace;
+  letter-spacing: 0.24em;
+  transition: opacity 420ms ease, visibility 420ms ease;
+}
+
+.book-study__loading.is-ready {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 760px) {
+  .book-study__brand,
+  .book-study__caption {
+    left: 22px;
+  }
+
+  .book-study__gate,
+  .book-study__views {
+    right: 22px;
+  }
+
+  .book-study__views {
+    gap: 13px;
+  }
+
+  .book-study__caption {
+    bottom: 84px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-study__loading,
+  .book-study__views button::after {
+    transition: none;
+  }
+}

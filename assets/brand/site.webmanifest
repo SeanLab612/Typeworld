@@ -1,0 +1,17 @@
+{
+  "name": "Typeworld",
+  "short_name": "Typeworld",
+  "description": "An interactive vintage typewriter archive.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#160f10",
+  "theme_color": "#160f10",
+  "icons": [
+    {
+      "src": "/brand/typeworld-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

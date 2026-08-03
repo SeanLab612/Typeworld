@@ -1,0 +1,52 @@
+{
+  "name": "typeworld",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://the0612.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeanLab612/Typeworld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeanLab612/Typeworld/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "award:check": "node scripts/check-award-readiness.mjs",
+    "assets:budget": "node scripts/check-production-asset-budget.mjs",
+    "blender:smoke": "./scripts/run-blender-smoke.sh",
+    "blender:blockout": "./scripts/run-blender-blockout.sh",
+    "blender:mechanism": "./scripts/run-blender-mechanism.sh",
+    "blender:materials": "./scripts/run-blender-materials.sh",
+    "blender:interaction": "./scripts/run-blender-interaction.sh",
+    "blender:environment": "./scripts/run-blender-environment.sh",
+    "model:validate": "node scripts/validate-blockout.mjs specs/keyboard-layout.json assets/models/typewriter-blockout.glb artifacts/phase-1/blockout-report.json",
+    "model:validate:mechanism": "node scripts/validate-blockout.mjs specs/keyboard-layout.json assets/models/typewriter-mechanism.glb artifacts/phase-2/mechanism-report.json",
+    "model:validate:materials": "node scripts/validate-blockout.mjs specs/keyboard-layout.json assets/models/typewriter-materials.glb artifacts/phase-3/materials-report.json",
+    "model:validate:interaction": "node scripts/validate-blockout.mjs specs/keyboard-layout.json assets/models/typewriter-interactive.glb artifacts/phase-4/interaction-report.json",
+    "model:validate:environment": "node scripts/validate-environment.mjs assets/models/typewriter-environment.glb artifacts/phase-6/environment-report.json",
+    "model:optimize:vendor-desk": "node scripts/optimize-vendor-desk-textures.mjs assets/models/vendor/wooden-retro-desk.glb assets/models/vendor/wooden-retro-desk.glb 2048",
+    "model:validate:vendor-desk": "node scripts/validate-vendor-desk.mjs assets/models/vendor/wooden-retro-desk.glb specs/vendor-desk-baseline.json",
+    "report:optimization": "node scripts/report-optimization.mjs assets/models/typewriter-interactive.glb artifacts/phase-5/optimization-report.json"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "^4.4.2",
+    "@gltf-transform/extensions": "^4.4.2",
+    "@vercel/analytics": "^2.0.1",
+    "three": "^0.185.1",
+    "three-mesh-bvh": "^0.9.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/three": "^0.185.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.0",
+    "vitest": "^4.1.10"
+  }
+}

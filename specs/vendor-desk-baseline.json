@@ -1,0 +1,74 @@
+{
+  "sourceSha256": "0765a1294fdc2c8b0e628ce22d1d3e96aa602f6f5842139d46287bc7c8d63b7e",
+  "sourceBytes": 70010356,
+  "maxTextureDimension": 2048,
+  "maxOptimizedBytes": 25000000,
+  "structuralHashes": {
+    "asset": "858353c456d9180e2f7f8f892326b60433eae49de3efc0977a6c2e7c4d205dc6",
+    "scene": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "scenes": "f7e211e366ce430966c5daf1615d24e96219901b72fac9df18080e12994c2795",
+    "nodes": "e261b1ffe152857b01cc7c9164ae59b0ee201e4f46ad247ab57ab5b042893d2a",
+    "meshes": "34ec9125eb5fec3ff5729c0945a7bea9ae28059bb4bd414e080a78e7a4424be3",
+    "skins": "020a11581e92cd596be0388d3661c7b3feb7dd17ddf11cfc03c1f402ffc2c472",
+    "animations": "e322b1e55db70cd4e207f5380d2e8eac3626eb721acfc7459678d764ed1676ab",
+    "accessors": "ec8c1e29a74d4f57cd487910171fc55f623892b5589b2fad82c8b14ef73892f8",
+    "materials": "a12854ca5c77456197009961b3c185567edf621677fdde33a58d329ff9d802f2",
+    "textures": "84736edab84ba9d971d34036fac61014b90faf83f5ad3438debdc5c8fae95139",
+    "samplers": "b8db174c663d2bf173595c0d2247df100fb84bd8b579780667c64b05b3449089"
+  },
+  "binaryViewHashes": [
+    {
+      "index": 0,
+      "name": "shortBufferViews",
+      "byteLength": 11696,
+      "sha256": "f8392b75949a779a16b6aa0b603624196445b1e953389a74ab600988d1ae408b"
+    },
+    {
+      "index": 1,
+      "name": "floatBufferViews",
+      "byteLength": 13824,
+      "sha256": "cf730480ac8c60ebc9f60043ba0aea98df8d2fd4f3f974fbebfc46d1e9d0fba7"
+    },
+    {
+      "index": 2,
+      "name": "floatBufferViews",
+      "byteLength": 11696,
+      "sha256": "e59b93dc7cdbf2fe5dffc9c5e9b6ea7aed6c52d3f2d272f77652875cb37ed5c7"
+    },
+    {
+      "index": 3,
+      "name": "floatBufferViews",
+      "byteLength": 35088,
+      "sha256": "c1541a16df1f04245f8d49bf44bd5ed861b9326446fe66f685379fbe0a740b79"
+    },
+    {
+      "index": 4,
+      "name": "floatBufferViews",
+      "byteLength": 46784,
+      "sha256": "d3d7c5b02bdb7b03bbaa18f8735f921ea7e23a56f555a94d2d0593587b1f456b"
+    },
+    {
+      "index": 5,
+      "name": "floatBufferViews",
+      "byteLength": 832,
+      "sha256": "3754daee83638e13734531d2c9b03c84ca6a19b78ecef10303b667ea883ae574"
+    },
+    {
+      "index": 6,
+      "name": "floatBufferViews",
+      "byteLength": 1880,
+      "sha256": "1d4d3609b41398c9eb61c56c2a0061351fd7d3d091651bc2a73a9038846569dd"
+    },
+    {
+      "index": 7,
+      "name": "floatBufferViews",
+      "byteLength": 5640,
+      "sha256": "6989f116edec512069862ff79d4482c8469b6ef8960071af914400c8548cd409"
+    }
+  ],
+  "imageNames": [
+    "Desk_baseColor.png",
+    "Desk_metallicRoughness.png",
+    "Desk_normal.png"
+  ]
+}

@@ -1,0 +1,306 @@
+:root {
+  color: #eadabd;
+  background: #10090a;
+  font-family: "Iowan Old Style", Baskerville, Georgia, serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#book-detail-sample {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+.book-detail-study {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #10090a;
+}
+
+.book-detail-study::after {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  background: #10090a;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 280ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.book-detail-study.is-leaving::after {
+  opacity: 1;
+}
+
+.book-detail-study canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: filter 280ms ease, transform 280ms cubic-bezier(0.4, 0, 1, 1);
+  will-change: filter, transform;
+}
+
+.book-detail-study.is-leaving canvas {
+  filter: brightness(0.72);
+  transform: scale(0.996);
+}
+
+.book-detail-study__brand,
+.book-detail-study__gate,
+.book-detail-study__title,
+.book-detail-study__views,
+.book-detail-study__controls,
+.book-detail-study__page,
+.book-detail-study__hint {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.book-detail-study__brand {
+  top: 34px;
+  left: 42px;
+  margin: 0;
+  color: #d1ac73;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+.book-detail-study__gate {
+  top: 35px;
+  right: 42px;
+  margin: 0;
+  color: rgb(228 208 177 / 55%);
+  font: 600 9px/1.5 "Courier New", monospace;
+  letter-spacing: 0.18em;
+  text-align: right;
+}
+
+.book-detail-study__title {
+  top: 50%;
+  right: 48px;
+  width: min(275px, 24vw);
+  transform: translateY(-50%);
+  transition: opacity 300ms ease;
+}
+
+.book-detail-study.is-open .book-detail-study__title {
+  opacity: 0;
+}
+
+.book-detail-study__views {
+  right: 42px;
+  bottom: 38px;
+  display: flex;
+  gap: 18px;
+  pointer-events: auto;
+  transition: opacity 260ms ease;
+}
+
+.book-detail-study__views button {
+  padding: 7px 0;
+  border: 0;
+  color: rgb(232 215 185 / 42%);
+  background: transparent;
+  cursor: pointer;
+  font: 600 9px/1 "Courier New", monospace;
+  letter-spacing: 0.14em;
+}
+
+.book-detail-study__views button:hover,
+.book-detail-study__views button:focus-visible,
+.book-detail-study__views button[aria-pressed="true"] {
+  color: #f0dfc3;
+}
+
+.book-detail-study__views button[aria-pressed="true"]::after {
+  display: block;
+  width: 16px;
+  height: 1px;
+  margin: 7px auto 0;
+  background: #b78955;
+  content: "";
+}
+
+.book-detail-study.is-open .book-detail-study__views {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.book-detail-study__title p,
+.book-detail-study__title h1 {
+  margin: 0;
+}
+
+.book-detail-study__title p {
+  color: #b78955;
+  font: 700 9px/1.4 "Courier New", monospace;
+  letter-spacing: 0.2em;
+}
+
+.book-detail-study__title h1 {
+  margin-top: 13px;
+  color: #f0dfc3;
+  font-size: clamp(30px, 3.1vw, 46px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.book-detail-study__title span {
+  display: block;
+  margin-top: 14px;
+  color: rgb(234 218 190 / 56%);
+  font: italic 15px/1.4 "Iowan Old Style", Baskerville, Georgia, serif;
+}
+
+.book-detail-study__links {
+  display: flex;
+  gap: 18px;
+  margin-top: 22px;
+  pointer-events: auto;
+}
+
+.book-detail-study__links:empty {
+  display: none;
+}
+
+.book-detail-study__links a {
+  padding: 6px 0;
+  border-bottom: 1px solid rgb(183 137 85 / 54%);
+  color: rgb(234 218 190 / 70%);
+  font: 600 9px/1 "Courier New", monospace;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+}
+
+.book-detail-study__links a:hover,
+.book-detail-study__links a:focus-visible {
+  color: #f0dfc3;
+  border-bottom-color: #d1ac73;
+}
+
+.book-detail-study__controls {
+  bottom: 38px;
+  left: 42px;
+  display: flex;
+  gap: 23px;
+  pointer-events: auto;
+}
+
+.book-detail-study__controls button {
+  padding: 8px 0;
+  border: 0;
+  color: rgb(232 215 185 / 58%);
+  background: transparent;
+  cursor: pointer;
+  font: 600 9px/1 "Courier New", monospace;
+  letter-spacing: 0.16em;
+}
+
+.book-detail-study__controls button:hover,
+.book-detail-study__controls button:focus-visible {
+  color: #f0dfc3;
+}
+
+.book-detail-study__controls button:focus-visible {
+  outline: 1px solid rgb(211 164 103 / 64%);
+  outline-offset: 5px;
+}
+
+.book-detail-study__controls [hidden] {
+  display: none;
+}
+
+.book-detail-study__page {
+  right: 43px;
+  bottom: 40px;
+  color: rgb(226 205 172 / 64%);
+  font: 600 10px/1 "Courier New", monospace;
+  letter-spacing: 0.16em;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.book-detail-study.is-open .book-detail-study__page {
+  opacity: 1;
+}
+
+.book-detail-study__hint {
+  bottom: 39px;
+  left: 50%;
+  color: rgb(226 207 176 / 42%);
+  font: 500 9px/1 "Courier New", monospace;
+  letter-spacing: 0.08em;
+  transform: translateX(-50%);
+}
+
+.book-detail-study__loading {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #d4ad75;
+  background: #10090a;
+  font: 600 10px/1 "Courier New", monospace;
+  letter-spacing: 0.24em;
+  transition: opacity 420ms ease, visibility 420ms ease;
+}
+
+.book-detail-study__loading.is-ready {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 760px) {
+  .book-detail-study__brand,
+  .book-detail-study__controls {
+    left: 22px;
+  }
+
+  .book-detail-study__gate,
+  .book-detail-study__page,
+  .book-detail-study__views {
+    right: 22px;
+  }
+
+  .book-detail-study__title {
+    top: auto;
+    right: 22px;
+    bottom: 86px;
+    left: 22px;
+    width: auto;
+    transform: none;
+  }
+
+  .book-detail-study__hint {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-detail-study::after,
+  .book-detail-study canvas,
+  .book-detail-study__loading,
+  .book-detail-study__page,
+  .book-detail-study__title,
+  .book-detail-study__views {
+    transition: none;
+  }
+}

@@ -1,0 +1,79 @@
+:root {
+  color: #f5e7d1;
+  background: #10090a;
+}
+
+html,
+body,
+.site-shell,
+.site-shell__page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.site-shell {
+  position: fixed;
+  inset: 0;
+  background: #10090a;
+}
+
+.site-shell__page {
+  display: block;
+  border: 0;
+  background: #10090a;
+}
+
+.site-shell > .music-player {
+  z-index: 30;
+}
+
+.site-shell.is-room-chrome-idle > .music-player {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(7px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-shell > .music-player {
+    transition-duration: 1ms;
+  }
+}
+
+.site-shell-fallback {
+  display: grid;
+  place-content: center;
+  min-height: 100%;
+  padding: 32px;
+  color: #ead8be;
+  background: radial-gradient(circle, #241315, #10090a 62%);
+  text-align: center;
+}
+
+.site-shell-fallback p {
+  color: #b88a55;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+}
+
+.site-shell-fallback h1 {
+  margin: 8px 0 12px;
+  font-weight: 400;
+}
+
+.site-shell-fallback span {
+  color: rgb(234 216 190 / 68%);
+}
+
+.site-shell-fallback button {
+  justify-self: center;
+  margin-top: 24px;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid #b88a55;
+  color: #ead8be;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}

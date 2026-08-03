@@ -1,0 +1,17 @@
+body {
+  animation: 420ms cubic-bezier(0.16, 1, 0.3, 1) both typeworld-route-in;
+}
+
+@keyframes typeworld-route-in {
+  from {
+    opacity: 0;
+    filter: brightness(0.72);
+    transform: scale(1.006);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation-duration: 1ms;
+  }
+}

@@ -43,7 +43,7 @@
     "three-mesh-bvh": "^0.9.13"
   },
   "devDependencies": {
-    "@types/node": "^24.13.3",
+    "@types/node": "^26.1.2",
     "@types/three": "^0.185.1",
     "typescript": "^7.0.2",
     "vite": "^8.2.0",

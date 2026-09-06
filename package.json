@@ -36,11 +36,11 @@
     "report:optimization": "node scripts/report-optimization.mjs assets/models/typewriter-interactive.glb artifacts/phase-5/optimization-report.json"
   },
   "dependencies": {
-    "@gltf-transform/core": "^4.4.2",
-    "@gltf-transform/extensions": "^4.4.2",
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
     "@vercel/analytics": "^2.0.1",
     "three": "^0.185.1",
-    "three-mesh-bvh": "^0.9.13"
+    "three-mesh-bvh": "^0.9.14"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
